@@ -1,0 +1,47 @@
+{
+    "prompt_1": {
+        "prompt": "What happened in the game between Kayserispor and Galatasaray on 22nd of December, 2024",
+        "tool_calls": [
+            {
+                "name": "obtain_event_summary_data",
+                "args": {
+                    "away_team_name": "Galatasaray",
+                    "home_team_name": "Kayserispor",
+                    "tournament_name": null,
+                    "event_date": "2024-12-20",
+                    "last_k": null 
+                }
+            }
+        ]
+    },
+    "prompt_2": {
+        "prompt": "What happened in the game between Kayserispor and Galatasaray on 2nd of December, 2024",
+        "tool_calls": [
+            {
+                "name": "obtain_event_summary_data",
+                "args": {
+                    "away_team_name": "Galatasaray",
+                    "home_team_name": "Kayserispor",
+                    "tournament_name": null,
+                    "event_date": "2024-12-20",
+                    "last_k": null 
+                }
+            }
+        ]
+    },
+    "prompt_3": {
+        "prompt": "Who scored in the last Manchester City Liverpool game",
+        "tool_calls": [
+            {
+                "name": "obtain_event_summary_data",
+                "args": {
+                    "away_team_name": "Manchester City",
+                    "home_team_name": "Liverpool",
+                    "tournament_name": null,
+                    "event_date": null,
+                    "last_k": 1
+                }
+            }
+        ]
+    }
+}

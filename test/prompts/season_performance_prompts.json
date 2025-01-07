@@ -1,0 +1,206 @@
+{
+    "prompt_1": {
+        "prompt": "How did Lionel Messi perform in La Liga during the 2017-18 season?",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [{
+                        "player_name": "Lionel Messi",
+                        "tournament_name": "La Liga",
+                        "season_year": 2017,
+                        "tournament_country": null
+                    }],
+                    "endpoint": "both"
+                }
+            }
+        ]
+    },
+    "prompt_2": {
+        "prompt": "Can you give me Erling Haaland's ratings for his last season in the Bundesliga?",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [{
+                        "player_name": "Erling Haaland",
+                        "tournament_name": "Bundesliga",
+                        "season_year": null,
+                        "tournament_country": null
+                    }],
+                    "endpoint": "ratings"
+                }
+            }
+        ]
+    },
+    "prompt_3": {
+        "prompt": "Tell me Mohamed Salah's stats in the Premier League.",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [{
+                        "player_name": "Mohamed Salah",
+                        "tournament_name": "Premier League",
+                        "season_year": null,
+                        "tournament_country": null
+                    }],
+                    "endpoint": "stats"
+                }
+            }
+        ]
+    },
+    "prompt_4": {
+        "prompt": "How did Neymar perform in international tournaments?",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [{
+                        "player_name": "Neymar",
+                        "tournament_name": null,
+                        "season_year": null,
+                        "tournament_country": null
+                    }],
+                    "endpoint": "both"
+                }
+            }
+        ]
+    },
+    "prompt_5": {
+        "prompt": "Show me Cristiano Ronaldo's performance in the 2021 season.",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [{
+                        "player_name": "Cristiano Ronaldo",
+                        "tournament_name": null,
+                        "season_year": 2021,
+                        "tournament_country": null
+                    }],
+                    "endpoint": "both"
+                }
+            }
+        ]
+    },
+    "prompt_6": {
+        "prompt": "Compare Lionel Messi and Cristiano Ronaldo's performance in the Champions League 2020-21 season.",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [
+                        {
+                            "player_name": "Cristiano Ronaldo",
+                            "tournament_name": "Champions League",
+                            "season_year": 2020,
+                            "tournament_country": null
+                        },
+                        {
+                            "player_name": "Lionel Messi",
+                            "tournament_name": "Champions League",
+                            "season_year": 2020,
+                            "tournament_country": null
+                        }
+                    ],
+                    "endpoint": "both"
+                }
+            }
+        ]
+    },
+    "prompt_7": {
+        "prompt": "Who performed better in Serie A last season: Paulo Dybala or Victor Osimhen?",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [
+                        {
+                            "player_name": "Paulo Dybala",
+                            "tournament_name": "Serie A",
+                            "season_year": null,
+                            "tournament_country": null
+                        },
+                        {
+                            "player_name": "Victor Osimhen",
+                            "tournament_name": "Serie A",
+                            "season_year": null,
+                            "tournament_country": null
+                        }
+                    ],
+                    "endpoint": "both"
+                }
+            }
+        ]
+    },
+    "prompt_8": {
+        "prompt": "Compare stats between Kevin De Bruyne and Luka Modric in their leagues during 2018.",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [
+                        {
+                            "player_name": "Kevin De Bruyne",
+                            "tournament_name": "Premier League",
+                            "season_year": 2018,
+                            "tournament_country": null
+                        },
+                        {
+                            "player_name": "Luka Modric",
+                            "tournament_name": "La Liga",
+                            "season_year": 2018,
+                            "tournament_country": null
+                        }
+                    ],
+                    "endpoint": "stats"
+                }
+            }
+        ]
+    },
+    "prompt_9": {
+        "prompt": "How do the ratings of Robert Lewandowski and Karim Benzema compare in the Spanish league?",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [
+                        {
+                            "player_name": "Robert Lewandowski",
+                            "tournament_name": "Spanish League",
+                            "season_year": null,
+                            "tournament_country": "Spain"
+                        },
+                        {
+                            "player_name": "Karim Benzema",
+                            "tournament_name": "Spanish League",
+                            "season_year": null,
+                            "tournament_country": "Spain"
+                        }
+                    ],
+                    "endpoint": "ratings"
+                }
+            }
+        ]
+    },
+    "prompt_11": {
+        "prompt": "How did Marcus Rashford perform in 2022 across all tournaments?",
+        "tool_calls": [
+            {
+                "name": "obtain_season_performance_data",
+                "args": {
+                    "parameters": [
+                        {
+                            "player_name": "Marcus Rashford",
+                            "tournament_name": null,
+                            "season_year": 2022,
+                            "tournament_country": null
+                        }
+                    ],
+                    "endpoint": "both"
+                }
+            }
+        ]
+    }
+}

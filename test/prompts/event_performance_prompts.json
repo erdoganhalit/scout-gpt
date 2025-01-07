@@ -1,0 +1,77 @@
+{
+    "prompt_1": {
+        "prompt": "How did Erling Haaland play against Manchester United on 20th of December, 2024?",
+        "tool_calls": [
+            {
+                "name": "obtain_event_performance_data",
+                "args": {
+                    "player_name": "Erling Haaland",
+                    "player_team_name": null,
+                    "opponent_team_name": "Manchester United",
+                    "tournament_name": null,
+                    "event_date": "2024-12-20"
+                }
+            }
+        ]
+    },
+    "prompt_2": {
+        "prompt": "How did Lionel Messi perform in the World Cup match against France?",
+        "tool_calls": [
+            {
+                "name": "obtain_event_performance_data",
+                "args": {
+                    "player_name": "Lionel Messi",
+                    "player_team_name": null,
+                    "opponent_team_name": "France",
+                    "tournament_name": "World Cup",
+                    "event_date": null
+                }
+            }
+        ]
+    },
+    "prompt_3": {
+        "prompt": "Tell me how Kevin De Bruyne performed in the Champions League final on 29th May 2021.",
+        "tool_calls": [
+            {
+                "name": "obtain_event_performance_data",
+                "args": {
+                    "player_name": "Kevin De Bruyne",
+                    "player_team_name": null,
+                    "opponent_team_name": null,
+                    "tournament_name": "Champions League",
+                    "event_date": "2021-05-29"
+                }
+            }
+        ]
+    },
+    "prompt_4": {
+        "prompt": "How did Neymar perform in the Copa América final?",
+        "tool_calls": [
+            {
+                "name": "obtain_event_performance_data",
+                "args": {
+                    "player_name": "Neymar",
+                    "player_team_name": "Brazil",
+                    "opponent_team_name": null,
+                    "tournament_name": "Copa América",
+                    "event_date": null
+                }
+            }
+        ]
+    },
+    "prompt_5": {
+        "prompt": "How did Cristiano Ronaldo perform against Barcelona?",
+        "tool_calls": [
+            {
+                "name": "obtain_event_performance_data",
+                "args": {
+                    "player_name": "Cristiano Ronaldo",
+                    "player_team_name": null,
+                    "opponent_team_name": "Barcelona",
+                    "tournament_name": null,
+                    "event_date": null
+                }
+            }
+        ]
+    }
+}
