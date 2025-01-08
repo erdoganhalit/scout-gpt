@@ -10,8 +10,8 @@ ROUTER_MODEL_NAME = 'gpt-3.5-turbo'
 TOOL_CALLER_MODEL_NAME = 'gpt-4o-mini'
 ANSWER_GENERATOR_MODEL_NAME = 'gpt-3.5-turbo'
 TOOL_CALLER_TEMPERATURE = 0
-ANSWER_GENERATOR_TEMPERATURE = 0.3
-TOKEN_THRESHOLD = 1000
+ANSWER_GENERATOR_TEMPERATURE = 0.5
+TOKEN_THRESHOLD = 10000
 
 WEB_SEARCH_TOOL_CALLER_SYSTEM_MESSAGE = "You are a AI agent whose job is to call a langchain tool for web search. Use the tool when you do not know the answer to human question."
 

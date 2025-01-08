@@ -194,7 +194,9 @@ class Subgraph:
     def _get_messages_to_remove(self, config):
         threshold = TOKEN_THRESHOLD
         snapshot = self.graph.get_state(config)
-        messages = snapshot.values["messages"]
+        messages = snapshot.values.get("messages")
+        if not messages:
+            return []
         total_content = ''
         for msg in messages:
             total_content += msg.content
@@ -362,6 +364,11 @@ class MainGraph:
         """
         # Route the message to the correct subgraph
         selected_subgraph = self._route_message(user_input)
+        
+        remove_old_msgs = selected_subgraph._get_messages_to_remove(config=config)
+        if remove_old_msgs:
+            selected_subgraph.graph.update_state(config, {'messages': remove_old_msgs})
+
 
         # Process the input through the selected subgraph
         response = selected_subgraph.stream_graph_updates(user_input=user_input, config=config)
@@ -374,8 +381,5 @@ class MainGraph:
         # Stream the updated response
         response = selected_subgraph.stream_graph_updates(user_input=None, config=config)
 
-        remove_old_msgs = selected_subgraph._get_messages_to_remove(config=config)
-        if remove_old_msgs:
-            selected_subgraph.graph.update_state(config, remove_old_msgs)
-
+        
         return response
