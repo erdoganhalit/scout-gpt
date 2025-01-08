@@ -9,7 +9,7 @@ Scout-GPT is an agentic AI assistant designed to analyze football data. It integ
 
 1. Clone the repository:
    ```bash
-   git clone <repo_url>
+   git clone https://github.com/erdoganhalit/scout-gpt.git
    cd scout-gpt
    ```
 2. Install dependencies:
